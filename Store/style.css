@@ -1,0 +1,501 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Lato, sans-serif;
+    font-style: normal;
+}
+
+.header {
+    background: #222222;
+    padding: 19px 32px;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container {
+    margin: 0 auto;
+    position: relative;
+    max-width: 1000px;
+}
+
+.logo {
+    margin-right: 40px;
+}
+
+.right_nav__logo {
+    margin-left: 34px;
+}
+
+.brandContent__container {
+    display: flex;
+    position: relative;
+}
+
+.brandContent__container > div{
+    width: 50%;
+}
+
+.leftBrand img {
+    width: 100%;
+    display: block;
+}
+
+.rightBrand {
+    background: #F1E4E6;
+    display: flex;
+    align-items: center;
+    padding-left: 64px;
+}
+
+.rightBrandPromo {
+    border-left: 12px solid #F16D7F;
+    height: 92px;
+    padding-left: 15px;
+}
+
+.rightBrandPromo div:first-child {
+    font-size: 44px;
+    line-height: 33px;
+    font-weight: 700;
+    margin-top: 6px;
+}
+
+.rightBrandPromo div:last-child {
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 25px;
+}
+
+.rightBrandPromo div > span {
+    color: #F16D7F;
+}
+
+.brandDark {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hidden {
+    display: none;
+}
+
+.menu {
+    position: relative;
+    background: white;
+    width: 232px;
+    height: inherit;
+    margin-left: auto;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    padding: 37px 24px;
+    box-sizing: border-box;
+    max-height: inherit;
+    overflow: auto;
+}
+
+.menuClose {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+}
+
+.menuTitle {
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.menuHeader {
+    font-size: 14px;
+    line-height: 17px;
+    color: #F16D7F;
+    margin-bottom: 12px;
+}
+
+.menuUnit a {
+    display: block;
+    text-decoration: none  ;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+    margin-bottom: 10px;
+    margin-left: 16px;
+}
+
+.menuUnit a:last-child {
+    margin-bottom: 20px;
+}
+
+.offersCard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 167px 116px;
+    gap: 20px;
+    padding: 64px 16px;
+}
+
+.offersCard > div {
+    position: relative;
+}
+
+.forAccesories {
+    grid-column: 1/-1;
+}
+
+.offers img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+}
+
+.offersTitle {
+    position: relative;
+    z-index: 1;
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+
+.priceOffersHeader {
+    text-align: center;
+    font-size: 30px;
+    line-height: 36px;
+    color: #222222;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+.priceOffersText {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #5D5D5D;
+}
+
+.priceOffersHeaderText {
+    text-align: center;
+}
+
+.priceCards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 30px;
+    padding: 47px 16px;
+}
+
+.priceOffersCards img {
+    width: 100%;
+    display: block;
+}
+
+.priceCardsImg {
+    position: relative;
+}
+
+.priceCardsImg:hover .offersCardsImgDark {
+    display: flex;
+}
+
+.offersCardsImgDark {
+    background: rgba(58, 56, 56, 0.86);
+    position: absolute;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    display: none;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.offersCardsImgDark button {
+    background: none;
+    border: 1px solid white;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px 14px;
+    font-size: 14px;
+    font-family: inherit;
+}
+
+
+.cardInfo {
+    padding: 25px 18px;
+    background: #F8F8F8;
+}
+
+.cardName {
+    font-size: 13px;
+    line-height: 16px;
+    color: #000000;
+    font-weight: 500;
+}
+
+.cardText {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #5D5D5D;
+}
+
+.cardPrice {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F16D7F;
+}
+
+.priceOffersBtn {
+    border: 1px solid #FF6A6A;
+    width: 212px;
+    height: 48px;
+    color: #F26376;
+    font-size: 16px;
+    line-height: 19px;
+    background: #fff;
+    margin: 0 auto;
+    display: block;
+    margin-top: 17px;
+}
+
+.priceOffersBtn:hover {
+    background: #F26376;
+    color: #fff;
+}
+
+.service {
+    background: #222224;
+}
+
+
+.serviceType {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 64px;
+    padding-top: 104px;
+    padding-bottom: 104px;
+    margin-top: 94px;
+}
+
+.serviceView {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.serviceName {
+    font-size: 19.96px;
+    line-height: 24px;
+    color: #FBFBFB;
+    margin-top: 20px;
+}
+
+.serviceText {
+    margin-top: 16px;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 17px;
+    text-align: center;
+    color: #FBFBFB;
+}
+
+.subscribe {
+    background: url(img/subBackground.png) no-repeat;
+    background-size: cover;
+    padding-top: 97px;
+    padding-bottom: 126px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.subscribe .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.subscribeInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subscribeInfoText {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #222224;
+    margin-top: 30px;
+}
+
+.subscribeEmail {
+    height: 47px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 32px;
+}
+
+.subscribeEmailText {
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+    color: #222224;
+}
+
+.subscribeEmailText span {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.subscribeEmailEnter {
+    margin-top: 7px;
+}
+
+.subscribeEmailEnter input {
+    height: inherit;
+    background: #e1e1e1;
+    border: none;
+    padding: 15px 21px;
+    box-sizing: border-box;
+    border-top-left-radius: 28px;
+    border-bottom-left-radius: 28px;
+    float: left;
+    width: 185px;
+    line-height: 17px;
+}
+
+.subscribeEmailEnter button {
+    height: inherit;
+    border: none;
+    color: white;
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 17px;
+    background: #f16d7f;
+    border-top-right-radius: 28px;
+    border-bottom-right-radius: 28px;
+    padding: 15px 17px;
+}
+
+footer {
+    background: #222224;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 16px;
+}
+
+.footerLeft {
+    color: #FBFBFB;
+}
+
+.footerRight {
+    display: flex;
+}
+
+.footerRight a {
+    color: black;
+    background: white;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.footerRight a:not(last-child) {
+    margin-right: 7px;
+}
+
+/* Адаптив */
+
+@media (max-width: 768px) {
+    .priceCards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .serviceType {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .subscribe .container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 614px) {
+    .rightBrandPromo div:first-child {
+        font-size: 39px;
+    }
+}
+
+@media (max-width: 599px) {
+    .market,
+    .contacts {
+        display: none;
+    }
+    
+    .leftBrand {
+        display: none;
+    }
+
+    .rightBrand {
+        justify-content: center;
+        padding-left: 0;
+    }
+
+    .brandContent__container > div {
+        width: 100%;
+        min-height: 370px;
+    }
+
+    .offersCard {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 247px) 111px;
+    }
+    
+    .priceCards {
+        grid-template-columns: 1fr;
+    }
+
+    footer .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footerRight {
+        margin-top: 40px;
+    }
+}
+
+
+
+
+
+
+
+
